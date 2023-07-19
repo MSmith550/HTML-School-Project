@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* Char set to be used */
+
+
+/* CSS style sheet
+Author: Matthew Smith
+Date: 7/21/21
+Filename: ctylesheet.css */
+
+/* styles for the whole document */
+html{
+    background-color: hsl(27, 57%, 67%);
+}
+
+/* styles for image */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mainimage{
+    width: 100%;
+    height: 300%;
+}
+
+/*styles for the <head> tag */
+header{
+    padding: 10px;
+}
+
+/* styles for the body */
+body{
+    text-align:center;
+    background-color: lavender;
+}
+
+/* styles for the <p> tags */
+p{
+    color: blue;
+}
+
+/* styles for the main <nav> tag */
+nav#mainnav{
+    background-color: peachpuff;
+    text-align: center;
+    display: inline-flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav#mainnav ul {
+    list-style-type: none;
+}
+
+/* styles for the second <nav> tag */
+nav#secondnav{
+    background-color: peachpuff;
+    text-align: center;
+    word-spacing: 45px;
+}
+
+/* styles for the <h1> tag */
+h1{
+    color: white;
+    background-color: rgb(222,125,60);
+    font-family: sans-serif;
+    text-shadow: gray 4px 6px 5px;
+}
+
+/* styles for the <h4> tag */
+h4{
+    color: white;
+    font-size: 1.5em;
+    background-color: rgb(222,125,60);
+}
+
+/* styles for the <h5> tag */
+h5{
+    color: white;
+    font-size: 1.2em;
+    background-color: rgb(127, 175, 72);
+}
+
+/* styles for the <footer> tag */
+footer{
+    padding: 16px;
+    background-color: rgb(222,222,222);
+    clear: both;
+}
+
+/* styles for the <article> tag */
+article{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* styles for the table in aboutus page */
+table.history {
+    background: white;
+    border: 10px gray;
+    font-size: 1em;
+    width: 100%;
+    border-collapse: collapse;
+}
+table.history th, table.history td {
+    border: 5px solid gray;
+}
+
+/* styles for the servies page */
+article.services {
+    column-count: 2;
+    column-rule: 3px solid red;
+}
+
+/* styles for the homepage */
+table.maininfo {
+    background: tan;
+    width: 100%;   
+}
+
+table.maininfo td{
+    border: 2px solid grey;
+}
+
+/* styles for contactus page */
+table.contactus {
+    background: greenyellow;
+    width: 100%;
+}
+
+table.contactus td {
+    border: 5px solid grey;
+}
+
+textarea {
+    margin-top: 10px;
+    height: 100px; 
+    width: 95%;
+}
+
+div.formRow { 
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-flow: row wrap; 
+    flex-flow: row wrap; 
+    margin: 7px 0px;
+}

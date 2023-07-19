@@ -1,0 +1,122 @@
+<!-- Home page. Includes name of company that I came up with and some information about what they do
+     Matthew smtih, 7/12/2021, index.html -->
+
+<!DOCTYPE html>
+<html dir = "ltr" lang = "en">
+
+<!-- Title on the web page -->
+<head>
+    <title>Kittie Sale Solutions</title>
+    <link href="stylesheet.css" rel="stylesheet" />
+
+</head>
+    <!-- first body of page -->
+    <body>
+    <header>
+        <!-- Main header and image. Image is also linked to the index.html so it will go to homepage if user clicks on it -->
+        <a href="index.html"><img src="Logo.jpg" alt="Kittie Logo"></a>
+        <h1>Kittie Sale Solutions</h1>
+        <!-- First navigation set, urls to be added later along with proper names. Links can be added or removed from this area -->
+        <nav id="mainnav">
+            <ul>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="Aboutus.html">AboutUs</a></li>
+                <li><a href="Services.html">Service</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contactus.html">ContactUs</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section><!-- main content section -->
+            <h1>How Can We Help</h1>
+            <article><!-- main content article -->
+                <table class="contactus">
+                    <tr>
+                        <td>
+                        <p>Connect with the experts at Kittie Sale Solutions by Phone or Email on anything from your general inquiries to service and support questions.<br>
+                            Our helpdesk of support is available 24/7 for any customer assistance</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <p>For any urgent requests, please contact the support team at SUPPORT@Kittie.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <p>To reach our sales team for quotes, product purcheses, and pricing, please call 123-456-7890<br>
+                            To reach our supermarket helpdesk, please call 456-789-1230<br>
+                            To reach our Convenient store help desk, please call 789-123-4560</p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Contact form -->
+                <form id="contactform" action="response_page.php" method="POST">
+                    <!--Fieldset-->
+                    <fieldset id="contactinfo">
+                        <!--Legend-->
+                        <legend> Contact information (* are required fields)</legend>
+
+                        <!--Textfield-->
+                        <div class="formRow">
+                            <label for="name">Full Name*</label>
+                            <input name="custname" id="name" type="text" placeholder="Enter full Name" required>
+                        </div>
+
+                        <!--Textfield-phonenumber-->
+                        <div class="formRow">
+                            <label for="contact">Contact Email*</label>
+                            <input name="contactnum" id="contact" type="email" placeholder="Enter Contact Email" required>
+                        </div>
+
+                        <!--Select dropdown-->
+                        <div class="formRow">
+                            <label for="supportinfo">Support Needed</label>
+                            <select name="infosec" id="supportinfo">
+                                <option value="hardware">Hardware</option>
+                                <option value="software">Software</option>
+                                <option value="both">Both</option>
+                            </select>
+                        </div>
+
+                        <!--Radiobutton-->
+                        <div class="formRow">
+                            <label>Department trying to contact</label>
+                            <fieldset class="deparmentlist">
+                                <label for="sales">Sales</label>
+                                <input name="dept" id="sales" value="sales" type="radio">
+
+                                <label for="helpdesk">Helpdesk</label>
+                                <input name="dept" id="helpdesk" value="helpdesk" type="radio">
+
+                                <label for="both">Both</label>
+                                <input name="dept" id="both" value="both" type="radio">
+
+                            </fieldset>
+                        </div>
+
+                        <!--Text area-->
+                        <div class="formRow">
+                            <label for="info">A little bit about what you need help with</label>
+                            <textarea name="information" id="info"></textarea>
+                        </div>
+                    </fieldset>
+                    
+                    <!--Submit button-->
+                    <input type="submit" value="Submit">
+                </form>
+            </article>
+        </section>
+        <footer> <!-- footer for the bottom of the page -->
+            <p>Author: Matthew Smith</p>
+            <!-- First navigation set, urls to be added later along with proper names. Links can be added or removed from this area -->
+            <nav id="secondnav">
+                <a href="index.html">HomePage</a>
+                <a href="Aboutus.html">AboutUs</a>
+                <a href="Services.html">Services</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Contactus.html">ContactUs</a>
+            </nav>
+        </footer>
+    </body>
+</html>
